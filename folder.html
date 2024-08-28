@@ -39,171 +39,114 @@
             </p>
           </div>
         </div>
-        <div class="storypopup">
-          <div class="popup-header"></div>
-          <div class="popup-body">
-            <p>Would you like to continue?</p>
-            <a href="story.html">
-              <button class="continue-button">Continue</button>
-            </a>
-          </div>
-        </div>
+        <!-- Hoo's Notes SECTION -->
       </div>
       <div class="content">
-        <!-- DOCUMENT SECTION -->
+        <div class="section-header-bar"></div>
         <div class="category">
-          <h2 class="category-header">Documents</h2>
-          <div class="documents grid-container">
+          <h2 class="category-header">Article and Notes</h2>
+          <div class="notes grid-container">
             <div
-              class="document-item"
-              onclick="showDocumentPopup('./images/LImbic_Page1.jpg', 'Limbic_Page1', 'This is a description or note related to Document 1.')"
+              class="notes-item"
+              onclick="showDocumentPopup('/images/LimbicLogo.png', 'Limbic', 'This is a description or note related to Document 1.')"
             >
-              <img src="./images/LImbic_Page1.jpg" alt="Limbic_Patent" />
-              <p>Limbic Patent</p>
-            </div>
-            <div
-              class="document-item"
-              onclick="showDocumentPopup('./images/AFA_Versus_Limbic.png', 'AFA_Versus_Limbic', 'This is a description or note related to AFA Versus Limbic.')"
-            >
-              <img
-                src="./images/AFA_Versus_Limbic.png"
-                alt="AFA_Versus_Limbic"
-              />
-              <p>AFA_Versus_Limbic</p>
-            </div>
-            <div
-              class="document-item"
-              onclick="showDocumentPopup('./images/DATADECENCYAD_DataDecencyv4.png', 'Data Decency Ad', 'This is a description or note related to Data Decency AD')"
-            >
-              <img
-                src="./images/DATADECENCYAD_DataDecencyv4.png"
-                alt="AFA Advertisement"
-              />
-              <p>Data Decency Ad</p>
-            </div>
-            <div
-              class="document-item"
-              onclick="showDocumentPopup('/images/CINE46Manifesto.png', 'CINE46Manifesto', 'This is a description or note related to Document 1.')"
-            >
-              <img src="/images/CINE46Manifesto.png" alt="CINE46Manifesto" />
-              <p>CINE46Manifesto</p>
-            </div>
-            <div
-              class="document-item"
-              onclick="showDocumentPopup('/images/CINE46BCIPoison.png', 'CINE46BCIPoison', 'This is a description or note related to Document 1.')"
-            >
-              <img src="/images/CINE46BCIPoison.png" alt="CINE46BCIPoison" />
-              <p>CINE46BCIPoison</p>
+              <img src="./images/LimbicLogo.png" alt="Limbic" />
+              <p>Notes on Limbic</p>
             </div>
           </div>
         </div>
-        <!-- IMAGES SECTION -->
+        <!-- LIMBIC SECTION -->
         <div class="category">
-          <h2 class="category-header">Images</h2>
-          <div class="images grid-container">
+          <h2 class="category-header">Limbic</h2>
+          <div class="documents grid-container">
             <div
-              class="image-item"
-              onclick="showDocumentPopup('/images/Fuck.png', 'grafitti', 'This is a description or note related to Document 1.')"
+              class="limbic-item"
+              onclick="showVideoPopup('./videos/SS_Explained.mp4', 'SpinalStorytellingExplained.mp4', 'Early B2B comms video detailing how Spinal Storytelling, later renamed Synaptic Storytelling, works. ')"
             >
-              <img src="/images/Fuck.png" alt="grafitti" />
-              <p>Neulu grafitti</p>
+              <img
+                src="./images/SS_explainedthumbnail.png"
+                alt="SS_Explained"
+              />
+              <p>SS_Explained.mp4</p>
             </div>
             <div
-              class="image-item"
+              class="limbic-item"
+              onclick="showVideoPopup('./videos/limbictesting_v2.mp4', 'Limbic_TestingVideo.mp4', ' ')"
+            >
+              <img
+                src="./images/LimbicTesting_thumbnail.png"
+                alt="LimbicTesting_Video"
+              />
+              <p>Limbic_TestingVideo.mp4</p>
+            </div>
+            <div
+              class="limbic-item"
+              onclick="showDocumentPopup('./images/LImbic_Page1.jpg', 'Limbic_Page1', 'Limbic Patent detailing the architecture for synaptic or spinal storytelling. Shows how stories have infinite possibilities and how story structures are malleable to meet a users needs at all times. This means no episode using limbic technology will be exactly the same.')"
+            >
+              <img src="./images/LImbic_Page1.jpg" alt="Limbic_Patent" />
+              <p>LimbicPatent.pdf</p>
+            </div>
+          </div>
+        </div>
+        <!-- NEULU SECTION -->
+        <div class="category">
+          <h2 class="category-header">Neulu</h2>
+          <div class="images grid-container">
+            <div
+              class="neulu-item"
               onclick="showDocumentPopup('./images/NeuluPackaging_Front.png', 'NeuluPackaging_Front', 'This is a description or note related to Document 1.')"
             >
               <img
                 src="./images/NeuluPackaging_Front.png"
                 alt="NeuluPackaging_Front"
               />
-              <p>NeuluPackaging_1</p>
-            </div>
-            <div
-              class="image-item"
-              onclick="showDocumentPopup('/images/NeuluPackaging_Back.png', 'NeuluPackaging_Back', 'This is a description or note related to Document 1.')"
-            >
-              <img
-                src="./images/NeuluPackaging_Back.png"
-                alt="NeuluPackaging_Back"
-              />
-              <p>NeuluPackaging_2</p>
-            </div>
-            <div
-              class="image-item"
-              onclick="showDocumentPopup('/images/TheEagle.png', 'The Eagle', 'This is a description or note related to Document 1.')"
-            >
-              <img src="/images/TheEagle.png" alt="grafitti" />
-              <p>Thumbnail_1</p>
-            </div>
-            <div
-              class="image-item"
-              onclick="showDocumentPopup('/images/ThePit.png', 'The Pit', 'This is a description or note related to Document 1.')"
-            >
-              <img src="/images/ThePit.png" alt="The Pit" />
-              <p>Thumbnail_2</p>
-            </div>
-            <div
-              class="image-item"
-              onclick="showDocumentPopup('/images/TheSnake.png', 'The Snake', 'This is a description or note related to Document 1.')"
-            >
-              <img src="/images/TheSnake.png" alt="The Snake" />
-              <p>Thumbnail_3</p>
+              <p>Neulu Packaging</p>
             </div>
           </div>
         </div>
-        <!-- VIDEOS SECTION -->
+        <!-- AMERICAN FEDERATION OF AUDIENCES SECTION -->
         <div class="category">
-          <h2 class="category-header">Videos</h2>
+          <h2 class="category-header">American Federation of Audiences</h2>
           <div class="videos grid-container">
             <div
-              class="video-item"
-              onclick="showVideoPopup('/videos/SS_Explained.mp4')"
+              class="afa-item"
+              onclick="showVideoPopup('./videos/SS_Explained.mp4')"
             >
               <img
-                src="/images/SS_explainedthumbnail.png"
+                src="./images/SS_explainedthumbnail.png"
                 alt="Video Thumbnail"
               />
               <p>Limbic_B2B_AD</p>
             </div>
-            <div
-              class="video-item"
-              onclick="showVideoPopup('/videos/limbictesting_v2.mp4')"
-            >
-              <img
-                src="/images/LimbicTesting_thumbnail.png"
-                alt="Video Thumbnail"
-              />
-              <p>Limbic Testing</p>
-            </div>
-            <div
-              class="video-item"
-              onclick="showVideoPopup('/videos/Cine46_hackvideo_Compressed.mp4')"
-            >
-              <img
-                src="/images/Cine46VideoThumbnail.png"
-                alt="Video Thumbnail"
-              />
-              <p>Cine46_Hack</p>
-            </div>
-            <div
-              class="video-item"
-              onclick="showVideoPopup('/videos/NeuluHack_News.mp4')"
-            >
-              <img src="/images/NeuluHack_News.png" alt="Video Thumbnail" />
-              <p>NeuluHack_News</p>
-            </div>
           </div>
         </div>
-        <!-- NOTES SECTION -->
+        <!-- CINE46 SECTION -->
         <div class="category">
-          <h2 class="category-header">Notes</h2>
-          <div class="notes grid-container">
+          <h2 class="category-header">Cine46</h2>
+          <div class="cine46 grid-container">
             <div
-              class="notes-item"
-              onclick="showDocumentPopup('/images/LimbicLogo.png', 'Limbic', 'This is a description or note related to Document 1.')"
+              class="cine46-item"
+              onclick="showVideoPopup('./videos/Cine46_hackvideo.mp4')"
             >
-              <img src="/images/LimbicLogo.png" alt="Limbic" />
-              <p>Notes on Limbic</p>
+              <img
+                src="./images/Cine46VideoThumbnail.png"
+                alt="CINE46 Hack Video"
+              />
+              <p>C46_Video.mp4</p>
+            </div>
+            <div
+              class="cine46-item"
+              onclick="showVideoPopup('./videos/NeuluHack_News.mp4')"
+            >
+              <img src="./images/NeuluHack_News.png" alt="CINE46 Hack Video" />
+              <p>C46_NewsCoverage.mp4</p>
+            </div>
+            <div
+              class="cine46-item"
+              onclick="showDocumentPopup('./images/CINE46Manifesto.png', 'CINE46Manifesto', 'This is a description or note related to Document 1.')"
+            >
+              <img src="./images/CINE46Manifesto.png" alt="CINE46Manifesto" />
+              <p>C46Manifesto.pdf</p>
             </div>
           </div>
         </div>

@@ -31,7 +31,8 @@ body {
 }
 
 .popup-header,
-.content-popup-header {
+.content-popup-header,
+.section-header-bar {
   background: #c2c2c2;
   padding: 10px;
   height: 30px;
@@ -89,7 +90,7 @@ a {
 
 .content h2 {
   margin-left: 2%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .grid-container {
@@ -98,9 +99,10 @@ a {
   width: 100%; /* Ensure the container is full width */
 }
 
-.document-item,
-.image-item,
-.video-item,
+.limbic-item,
+.neulu-item,
+.afa-item,
+.cine46-item,
 .notes-item {
   display: flex; /* Enables flexbox layout model */
   flex-direction: column; /* Stacks items vertically */
@@ -113,9 +115,10 @@ a {
 }
 
 /* Image styling for consistency and visibility */
-.image-item img,
-.document-item img,
-.video-item img,
+.limbic-item img,
+.neulu-item img,
+.afa-item img,
+.cine46-item img,
 .notes-item img {
   max-width: 100px; /* Ensures the image is fully contained within its element */
   max-height: 80px;
@@ -124,12 +127,18 @@ a {
   margin-bottom: 5px;
 }
 
-.image-item p,
-.document-item p,
-.video-item p,
+.limbic-item p,
+.neulu-item p,
+.afa-item p,
+.cine46-item p,
 .notes-item p {
   display: block;
   align-items: center;
+  max-width: 100%; /* Ensure the paragraph does not exceed its container's width */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  white-space: normal; /* Allow text to wrap within the container */
+  text-align: center; /* Optional: Center the text if desired */
+  margin: 0 auto; /* Optional: Center the text container itself */
 }
 
 .briefing {
@@ -143,13 +152,10 @@ a {
   margin-bottom: 15px;
 }
 
-.storypopup {
-  margin-top: 10px;
-}
-
 .content {
-  margin-right: 10%;
-  margin-top: 10px;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 70%;
   overflow-y: auto;
 }
@@ -157,8 +163,8 @@ a {
 .category-header {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  padding: 10px 0;
-  font-size: 24px;
+  padding: 5px 0;
+  font-size: 14px;
 }
 
 .documents,
@@ -250,63 +256,4 @@ a {
   max-width: 60%;
   max-height: 100%;
   margin-right: 20px;
-}
-
-/* /////PAGE 3: Story Page//// */
-.articlecontainer {
-  display: flex;
-  width: 200%;
-  max-width: 1200px;
-}
-
-.story p,
-h1,
-h3 {
-  padding: 5px;
-}
-
-.lettertotheeditor {
-  position: sticky;
-  top: 20px;
-  max-height: 500px;
-  min-height: 300px;
-  width: 60%;
-  margin: 30px;
-}
-
-.lettertotheeditor textarea {
-  width: 100%; /* Full width */
-  height: 300px; /* Increased height */
-  padding: 10px; /* Comfortable padding */
-  box-sizing: border-box; /* Include padding and border in the width */
-  resize: vertical; /* Allow vertical resize only */
-}
-
-.textarea-container,
-.textarea {
-  flex: 1;
-}
-
-.button-group {
-  margin-top: 10px;
-}
-
-/* Headings and Paragraphs */
-h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-h3 {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* Document, Image, Video Item Styling */
-.document-item,
-.image-item,
-.video-item {
-  font-size: smaller;
-  padding: 10px;
-  /* Add additional styling if necessary */
 }

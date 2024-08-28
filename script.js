@@ -49,6 +49,13 @@ function closePopup() {
   var img = document.getElementById("popupImage"); // This is the new line
   var mediaContainer = document.getElementById("popupMedia");
 
+    // Stop any playing video by pausing it
+    var video = mediaContainer.querySelector("video");
+    if (video) {
+      video.pause(); // Pause the video
+      video.currentTime = 0; // Reset the video to the start
+    }
+
   popup.style.display = "none";
 
   // Clear both media containers
