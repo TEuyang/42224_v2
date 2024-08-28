@@ -90,6 +90,13 @@ function closePopup() {
     video.currentTime = 0;
   }
 
+    // Stop any playing video by pausing it
+    var video = mediaContainer.querySelector("video");
+    if (video) {
+      video.pause(); // Pause the video
+      video.currentTime = 0; // Reset the video to the start
+    }
+
   popup.style.display = "none";
 }
 
